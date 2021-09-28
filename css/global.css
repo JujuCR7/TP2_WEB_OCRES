@@ -10,16 +10,19 @@
 }
 
 body {
+    align-content: space-around;
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
 }
 
 a {
     color: black;
     text-decoration: none;
+    
 }
 
 .wrapper {
     padding: 25px 0;
+    display: flex;
 }
 
 body > header {
@@ -44,6 +47,7 @@ header .user a {
 
 main h2 {
     margin-top: 4px;
+    padding-left: 2%;
 }
 
 
@@ -136,7 +140,7 @@ input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
     height: 28px;
-    width: 100%;
+    width: 25%;
     font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
@@ -144,6 +148,7 @@ input.search {
     border-radius: 15px;
     top: 11px;
     box-shadow: inset 1px 1px 5px #d5d5d5;
+    margin-left: 8%;
 }
 
 input.submit {
@@ -173,6 +178,7 @@ input.submit {
     font-size: 13px;
     color: #89949b;
     margin: 10px 0;
+    padding: 2%;
 }
 
 #albums article img {
@@ -216,6 +222,35 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
+header{
+    justify-content: center;
+    align-content: flex-start;
+    padding-left: 2%;
+}
+.all{display:flex;}
+aside{width: 20%;}
+.stats-links{display: flex;
+justify-content: space-between;}
 
+.browse{display: flex;
+    justify-content: center;}
+.music{display: flex;
+    justify-content: center;}
+.pull-left{margin-left:20%;}
+.top-album{
+    display: flex;
+justify-content: space-between;
+padding-right: 2%;}
+#albums{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
 
+@media screen and (max-width:500px) {
+    input{display: none;}    
+}
+@media screen and (max-width:1000px){
+    .aside{display: none;}
+}
 
